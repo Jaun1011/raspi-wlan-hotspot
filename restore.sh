@@ -6,7 +6,7 @@ cp /etc/hostapd/hostapd.conf.bkp    /etc/hostapd/hostapd.conf
 cp /etc/default/hostapd.bkp         /etc/default/hostapd
 cp /etc/sysctl.conf.bkp             /etc/sysctl.conf
 
-service dhcpcd restart
 systemctl stop hostapd 
 systemctl stop dnsmasq
 
+service   dhcpcd restart
