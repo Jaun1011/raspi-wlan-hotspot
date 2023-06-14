@@ -19,11 +19,7 @@ cp hostapd      /etc/default/hostapd
 cp hostapd.conf /etc/hostapd/hostapd.conf
 cp sysctl.conf  /etc/sysctl.conf
 
-
-
-
-
-chmod 600 /etc/hostapd/hostapd.conf
+chmod 600       /etc/hostapd/hostapd.conf
 
 ## setup iptable
 iptables -t nat -A POSTROUTING           -o eth0  -j MASQUERADE
@@ -34,7 +30,6 @@ netfilter-persistent save
 
 ## restart services
 service   dhcpcd restart
-
 
 systemctl start dnsmasq
 

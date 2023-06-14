@@ -1,6 +1,7 @@
-backup:  
+
+backup:
 	sudo ./backup.sh
-restore: 
+restore:
 	sudo ./restore.sh
-setup: 	 
+setup:
 	sudo ./setup.sh
