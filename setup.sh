@@ -33,7 +33,9 @@ iptables        -A FORWARD      -i wlan0 -o eth0  -j ACCEPT
 netfilter-persistent save
 
 ## restart services
-service dhcpcd restart
+service   dhcpcd restart
+
+
 systemctl start dnsmasq
 
 systemctl unmask hostapd
